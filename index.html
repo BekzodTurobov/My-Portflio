@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <!-- <script defer src="/js/app.js"></script> -->
+    <script defer src="/js/config.js"></script>
+    <title>Bekzod Turobov</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <a href="#" class="main-logo">B</a>
+        <div class="navigation-bar-container">
+          <ul class="main-nav">
+            <li class="main-nav-item">
+              <a href="#gallery" class="nav-link" id="gallery-link">Gallery </a>
+              <ion-icon
+                class="down-icon"
+                data-icon="1"
+                id="icon-1"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </li>
+            <li class="main-nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+
+            <li class="main-nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="https://cloudhq.net/s/a7c7c917645567" class="nav-link"
+                >Hire me</a
+              >
+            </li>
+          </ul>
+          <div class="nav-slides">
+            <ul class="slider">
+              <!-- 1 //////////////////////////// -->
+              <li class="slide">
+                <a
+                  href="https://omnifood-project-app.netlify.app"
+                  onclick="window.open (this.href)"
+                  id="slide-link-1"
+                  class="slide-link"
+                >
+                  <img
+                    id="img-1"
+                    class="slide-img"
+                    onmouseout="stopShow()"
+                    src="../img/webp/omnifood-img-1.webp"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <!-- 2 //////////////////////////// -->
+              <li class="slide">
+                <a
+                  href="https://team-pages-5.netlify.app"
+                  onclick="window.open (this.href)"
+                  id="slide-link-2"
+                  class="slide-link"
+                >
+                  <img
+                    id="img-2"
+                    class="slide-img"
+                    onmouseout="stopShow()"
+                    src="../img/webp/team-pages-img-1.webp"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <!-- 3 //////////////////////////// -->
+              <li class="slide">
+                <a
+                  href="https://pig-game-pink-app.netlify.app"
+                  onclick="window.open (this.href)"
+                  id="slide-link-3"
+                  class="slide-link"
+                >
+                  <img
+                    id="img-3"
+                    class="slide-img"
+                    onmouseout="stopShow()"
+                    src="../img/webp/pig-game-img-1.webp"
+                    alt=""
+                  />
+                </a>
+              </li>
+
+              <!-- 4 //////////////////////////// -->
+              <li class="slide">
+                <a
+                  href="https://tic-tac-toe-appgame.netlify.app"
+                  onclick="window.open (this.href)"
+                  id="slide-link-4"
+                  class="slide-link"
+                >
+                  <img
+                    id="img-4"
+                    class="slide-img"
+                    onmouseout="stopShow()"
+                    src="../img/webp/tic-tac-toe-img-1.webp"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <!-- 5 //////////////////////////// -->
+              <li class="slide">
+                <a
+                  href="https://calculate-your-tip-app.netlify.app"
+                  onclick="window.open (this.href)"
+                  id="slide-link-5"
+                  class="slide-link"
+                >
+                  <img
+                    id="img-5"
+                    class="slide-img"
+                    onmouseout="stopShow()"
+                    src="../img/webp/tip-calculator-img-1.webp"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <!-- 6 //////////////////////////// -->
+              <li class="slide">
+                <a
+                  href="https://404-error-page-2.netlify.app"
+                  onclick="window.open (this.href)"
+                  id="slide-link-6"
+                  class="slide-link"
+                >
+                  <img
+                    id="img-6"
+                    class="slide-img"
+                    onmouseout="stopShow()"
+                    src="../img/webp/error-img-1.webp"
+                    alt=""
+                  />
+                </a>
+              </li>
+
+              <button class="slider__btn slider__btn--left">
+                <ion-icon
+                  class="slider-icon"
+                  name="arrow-back-outline"
+                ></ion-icon>
+              </button>
+              <button class="slider__btn slider__btn--right">
+                <ion-icon
+                  class="slider-icon"
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </button>
+              <div class="dots">
+                <!-- <div class="dots-dot" data-slide="0"></div>
+      <div class="dots-dot" data-slide="1"></div>
+      <div class="dots-dot" data-slide="2"></div>  
+    -->
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- ////////////////////////////////// -->
+        <button class="btn-mobile-nav">
+          <div class="hamburger-icon"></div>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <!-- /////////////////////////////////// -->
+      <!-- MAIN PRIMARY -->
+      <!-- /////////////////////////////////// -->
+      <div class="main-primary-container container">
+        <div class="main-primary-col-1">
+          <h1 class="main-text">Hi! My name is <span>Bekzod</span>.</h1>
+          <p class="main-text-sub">
+            I'm a aspiring web developer and here are my projects.
+          </p>
+        </div>
+        <div class="main-primary-col-2">
+          <div class="composition">
+            <img
+              class="composition-photo composition-photo-1"
+              onmouseout="stopSlide(mainImgFirst, img4)"
+              src="/img/webp/tic-tac-toe-img-1.webp"
+              alt=""
+            />
+            <img
+              class="composition-photo composition-photo-2"
+              onmouseout="stopSlide(mainImgSecond, img1)"
+              src="/img/webp/omnifood-img-1.webp"
+              alt=""
+            />
+            <img
+              class="composition-photo composition-photo-3"
+              onmouseout="stopSlide(mainImgThird, img2)"
+              src="/img/webp/team-pages-img-1.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- /////////////////////////////////// -->
+      <!-- GALLERY -->
+      <!-- /////////////////////////////////// -->
+      <section class="gallery" id="gallery">
+        <div class="gallery-container">
+          <h2 class="gallery-main-text">Web pages and apps</h2>
+          <div class="gallery-grid-1 container">
+            <!-- BOX 1 -->
+            <div class="step-img-box">
+              <a
+                href="https://team-pages-5.netlify.app"
+                onclick="window.open (this.href)"
+                class="step-link"
+              >
+                <img class="step-img img-box-1"
+                onclick=`window.open("https://team-pages-5.netlify.app")`
+                target="_blank" onmouseout="stopSlide(stepBox1, img2)"
+                src="img/webp/team-pages-img-1.webp" alt="" />
+              </a>
+            </div>
+            <div class="step-text-box">
+              <h3 class="step-tertiary">Team Pages #5</h3>
+              <p class="step-description">
+                Meet the makers behind Untitled We’re a small group of bright,
+                motivated designers and developers all around the world. We’re
+                growing fast and would love to meet you. Check out our open
+                roles!
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-grid-2 container">
+            <!-- BOX 2 -->
+            <div class="step-text-box">
+              <h3 class="step-tertiary">Omnifood Project</h3>
+              <p class="step-description">
+                A healthy meal delivered to your door, every single day The
+                smart 365-days-per-year food subscription that will make you eat
+                healthy again.
+              </p>
+            </div>
+            <div class="step-img-box">
+              <a
+                href="https://omnifood-project-app.netlify.app"
+                onclick="window.open (this.href)"
+                class="step-link"
+              >
+                <img
+                  class="step-img img-box-2"
+                  onmouseout="stopSlide(stepBox2, img1)"
+                  src="img/webp/omnifood-img-1.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <!-- BOX 3 -->
+            <div class="step-img-box gal-3">
+              <a
+                href="https://404-error-page-2.netlify.app"
+                onclick="window.open (this.href)"
+                class="step-link"
+              >
+                <img
+                  class="step-img img-box-3"
+                  onmouseout="stopSlide(stepBox3, img6)"
+                  src="img/webp/error-img-1.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="step-text-box">
+              <h3 class="step-tertiary">Error Pages #2</h3>
+              <p class="step-description">
+                Uh oh, we can’t find that page... Sorry, the page you are
+                looking for doesn't exist or has been moved.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-grid-3 container">
+            <!-- BOX 4 -->
+            <div class="step-text-box">
+              <h3 class="step-tertiary">Pig Game</h3>
+              <p class="step-description">
+                Pig game is a simple dice game. Players take turns to roll a
+                single die as many times as they wish, adding all roll results
+                to a running total, but losing their gained score for the turn
+                if they roll a 1
+              </p>
+            </div>
+            <div class="step-img-box">
+              <a
+                href="https://pig-game-pink-app.netlify.app"
+                onclick="window.open (this.href)"
+                class="step-link"
+              >
+                <img
+                  class="step-img img-box-4"
+                  onmouseout="stopSlide(stepBox4, img3)"
+                  src="img/webp/pig-game-img-1.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <!-- BOX 5 -->
+            <div class="step-img-box">
+              <a
+                href="https://tic-tac-toe-appgame.netlify.app"
+                onclick="window.open (this.href)"
+                class="step-link"
+              >
+                <img
+                  class="step-img img-box-5"
+                  onmouseout="stopSlide(stepBox5, img4)"
+                  src="img/webp/tic-tac-toe-img-1.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="step-text-box">
+              <h3 class="step-tertiary">Tic Tac Toe</h3>
+              <p class="step-description">
+                Tic-tac-toe is played on a three-by-three grid by two players,
+                who alternately place the marks X and O in one of the nine
+                spaces in the grid.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-grid-4 container">
+            <!-- BOX 6 -->
+            <div class="step-text-box">
+              <h3 class="step-tertiary">Tip Calculator</h3>
+              <p class="step-description">
+                The Tip Calculator calculates tip amount for various percentages
+                of the cost of the service, and also provides a total amount
+                that includes the tip.
+              </p>
+            </div>
+            <div class="step-img-box">
+              <a
+                href="https://calculate-your-tip-app.netlify.app"
+                onclick="window.open (this.href)"
+                class="step-link"
+              >
+                <img
+                  class="step-img img-box-6"
+                  onmouseout="stopSlide(stepBox6, img5)"
+                  src="img/webp/tip-calculator-img-1.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container" id="about">
+        <div class="bg-video">
+          <video class="bg-video-content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            Your browser is not supported!
+          </video>
+        </div>
+        <div class="footer-img-box">
+          <img
+            class="owner-img"
+            src="img/444.JPG"
+            alt="portfolio owner's photo"
+          />
+          <div class="about-text-container">
+            <h3 class="about-main-text">Who am I?</h3>
+            <p about-sub-text>
+              I’m Bekzod, Hard working individual with an eagerness to learn and
+              a flair for creating elegant solution. Looking for growth
+              opportunities to try new technologies and grow my technical skills
+              set both as an individual and in a team-based environment.
+            </p>
+          </div>
+        </div>
+        <div class="about-box">
+          <div class="empty-box"></div>
+          <div class="footer-social-content" id="contact">
+            <h3 class="contact-text">Contact me</h3>
+            <p class="contact-sub-text">Get in touch</p>
+            <ul class="social-links">
+              <li>
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com/in/bekzod-turobov-0a079123a"
+                  ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="social-link"
+                  href="https://cloudhq.net/s/a7c7c917645567"
+                  ><ion-icon class="social-icon" name="mail-outline"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="social-link" href="https://github.com/BekzodTurobov"
+                  ><ion-icon class="social-icon" name="logo-github"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com/cosmos_inc_/"
+                >
+                  <ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-link"
+                  href="https://www.facebook.com/bekzod.turobov.7549/"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="social-link" href="https://t.me/Bekzod_Turobov"
+                  ><img class="social-icon" src="img/telegram-logo (1).svg"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-line">
+        <p class="copyright">
+          &#169; <span id="current-year">2077</span> All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

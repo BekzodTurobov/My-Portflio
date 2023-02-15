@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --co-pine--900: #011816;
+  --co-pine--800: #01201d;
+  --co-pine--700: #002a25;
+  --co-pine--600: #003d36;
+  --co-pine--500: #004a42;
+  --co-pine--400: #007a6d;
+  --co-pine--300: #50928a;
+  --co-pine--200: #a9c9c5;
+  --co-pine--100: #c9dddb;
+  --co-pine--50: #e5efee;
+  --co-sun--900: #7f500e;
+  --co-sun--800: #9d6713;
+  --co-sun--700: #b9801a;
+  --co-sun--600: #d59a21;
+  --co-sun--500: #f0b429;
+  --co-sun--400: #f6c148;
+  --co-sun--300: #face68;
+  --co-sun--200: #fddb8a;
+  --co-sun--100: #ffe6ac;
+  --co-sun--50: #fff2d0;
+  --color-dark-green-200: rgb(110, 162, 173, 0.2);
+  --color-dark-green-300: rgb(14, 97, 115);
+  --color-dark-green-400: rgb(14, 53, 61);
+  --color-dark-grenn500: rgb(33, 45, 55);
+  --color: rgb(35, 36, 37, 0.92);
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red: #dd7f6e;
+  --color-cyan: #26c0ab;
+  --color-cyan-light: #a1e8e0;
+  --color-cyan-0: #f4fafa; /*////////////////*/
+  --color-cyan-1: #c5e4e7;
+  --color-cyan-2: #7f9c9f;
+  --color-cyan-3: #5e7a7d;
+  --color-cyan-4: #00494d;
+
+  /* COLORS */
+  --color-white-base: #ffffff;
+  --color-white-100: #eeeeee;
+  /* Greys */
+  --color-grey-50: #f9fafb;
+  --color-grey-100: #f2f4f7;
+  --color-grey-200: #eaecf0;
+  --color-grey-300: #d0d5dd;
+  --color-grey-400: #98a2b3;
+  --color-grey-500: #667085;
+  --color-grey-600: #475467;
+  --color-grey-700: #344054;
+  --color-grey-900: #101828;
+  --color-overlay-grey-400: rgb(162, 162, 163, 0.2);
+  /* Purples */
+  --color-purple-50: #f9f5ff;
+  --color-purple-100: #f4ebff;
+  --color-purple-200: #e9d7fe;
+  --color-purple-300: #d6bbfb;
+  --color-purple-600: #7f56d9;
+  --color-purple-700: #6941c6;
+  --color-purple-800: #53389e;
+
+  /* Blues */
+  --color-blue-50: #eff8ff;
+  --color-blue-500: #2e90fa;
+  --color-blue-700: #175cd3;
+  /* Pinks */
+  --color-pink-50: #fdf2fa;
+  --color-pink-500: #ee46bc;
+  --color-pink-700: #c11574;
+  /* Indigo */
+  --color-indigo-50: #eef4ff;
+  --color-indigo-500: #6172f3;
+  --color-indigo-700: #3538cd;
+  /* Orange */
+  --color-orange-50: #fff4ed;
+  --color-orange-500: #ef6820;
+  --color-orange-700: #b93815;
+  /* Yellows */
+  --color-orange-300: #fec84b;
+
+  /* FONT WEIGHTS */
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-900: 900;
+
+  /* Greens */
+  --color-green-50: #ecfdf3;
+  --color-green-400: #5ec576;
+  --color-green-500: #12b76a;
+  --color-green-700: #027a48;
+
+  --color-green-light: #7ed56f;
+  --color-green-medium: #55c57a;
+  --color-green-light: #28b485;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 0.4rem var(--color-purple-100); */
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  overflow: visible;
+  color: var(--color-grey-500);
+  scroll-behavior: smooth;
+  /* padding: 3rem;
+  padding-top: 0; */
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem 6rem;
+}
+
+/* clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%); */
