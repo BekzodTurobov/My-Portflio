@@ -426,10 +426,10 @@ yearEl.textContent = currentYear;
 // SCREEN SIZE CHANGE RELOAD
 /* *************************************** */
 
-window.addEventListener("resize", function () {
-  if (window.innerWidth <= 880) {
-    ("use strict");
-    window.location.reload();
-  }
-  return;
-});
+// window.addEventListener("resize", function () {
+//   if (window.innerWidth <= 880) {
+//     ("use strict");
+//     window.location.reload();
+//   }
+//   return;
+// });
