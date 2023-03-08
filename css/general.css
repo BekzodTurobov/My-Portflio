@@ -125,13 +125,9 @@ body {
   overflow: visible;
   color: var(--color-grey-500);
   scroll-behavior: smooth;
-  /* padding: 3rem;
-  padding-top: 0; */
 }
 
 .container {
   margin: 0 auto;
   padding: 2rem 6rem;
 }
-
-/* clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%); */
